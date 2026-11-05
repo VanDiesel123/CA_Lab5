@@ -1,0 +1,42 @@
+total: 0 errors, 0 warnings, 64 lines checked
+
+/workspace/labs/lab5/src/hello1.c has no obvious style problems and is ready for submission.
+total: 0 errors, 0 warnings, 47 lines checked
+
+/workspace/labs/lab5/src/hello2.c has no obvious style problems and is ready for submission.
+make: Entering directory '/workspace/labs/lab5/src'
+make -C /home/student/bbb-lab/repos/linux-stable M=/workspace/labs/lab5/src clean
+make: Leaving directory '/workspace/labs/lab5/src'
+make: Entering directory '/workspace/labs/lab5/src'
+make -C /home/student/bbb-lab/repos/linux-stable M=/workspace/labs/lab5/src modules
+  CC [M]  /workspace/labs/lab5/src/hello1.o
+  CC [M]  /workspace/labs/lab5/src/hello2.o
+  Building modules, stage 2.
+  MODPOST 2 modules
+  CC      /workspace/labs/lab5/src/hello1.mod.o
+  CC      /workspace/labs/lab5/src/hello2.mod.o
+  LD [M]  /workspace/labs/lab5/src/hello2.ko
+  LD [M]  /workspace/labs/lab5/src/hello1.ko
+make: Leaving directory '/workspace/labs/lab5/src'
+/workspace/labs/lab5/src/hello1.ko: ELF 32-bit LSB relocatable, ARM, EABI5 version 1 (SYSV), BuildID[sha1]=13453e1e5370f13011a0de097cbeb27ce7cc5ede, not stripped
+/workspace/labs/lab5/src/hello2.ko: ELF 32-bit LSB relocatable, ARM, EABI5 version 1 (SYSV), BuildID[sha1]=546c6d4b16cf1418f9a78855512a0e155d342762, not stripped
+filename:       /workspace/labs/lab5/src/hello1.ko
+license:        Dual BSD/GPL
+description:    Hello service with timing and a kernel list
+author:         Student
+depends:        
+name:           hello1
+vermagic:       4.19.325 SMP mod_unload ARMv7 p2v8 
+filename:       /workspace/labs/lab5/src/hello2.ko
+license:        Dual BSD/GPL
+description:    Hello client with a count parameter
+author:         Student
+depends:        hello1
+name:           hello2
+vermagic:       4.19.325 SMP mod_unload ARMv7 p2v8 
+parm:           count:Number of calls to print_hello (uint)
+
+Header check:
+total: 0 errors, 0 warnings, 8 lines checked
+
+semester5/ca2/work/labs/lab5/src/inc/hello1.h has no obvious style problems and is ready for submission.
